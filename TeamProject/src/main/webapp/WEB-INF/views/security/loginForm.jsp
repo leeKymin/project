@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>TeamProject</title>
 </head>
 <body>
-	<form action="<c:url value="j_spring_security_check" />" method="post">  
+	<form action="<c:url value="j_spring_security_check" />" method="get">  
 		<c:if test="${param.error != null }">
 			<p> 
 				Login Error! <br>

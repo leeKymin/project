@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>TeamProject</title>
 </head>
 <body>
 	welcome : Admin으로 Login함
