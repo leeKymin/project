@@ -24,14 +24,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 			.antMatchers("/member/**").hasAnyRole("USER", "ADMIN")
 			.antMatchers("/admin/").hasRole("ADMIN")
 			.anyRequest().authenticated();
-//			.anyRequest().permitAll();
 		
 		http.formLogin().loginPage("/loginForm")
 		.loginProcessingUrl("/j_spring_security_check")
-//		.loginProcessingUrl("/loginauto")
-//		.loginProcessingUrl("/aaa")
-//		.defaultSuccessUrl("/")
-//		.failureUrl("/loginForm?error")
 		.failureHandler(authenticationFailureHandler)
 		.usernameParameter("j_username")
 		.passwordParameter("j_password").permitAll();

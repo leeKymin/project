@@ -26,10 +26,10 @@ public class MyDetailsService implements UserDetailsService {
 		
 		if(list.size() != 0) {
 			dto = list.get(0);
-			System.out.println("íšŒì› ì…ë‹ˆë‹¤.");
+			System.out.println("È¸¿øÀÌ ¸Â½À´Ï´Ù.");
 		} else {
 			dto = new User_listDTO();
-			System.out.println("íšŒì›ì´ ì•„ë‹™ë‹ˆë‹¤.");
+			System.out.println("È¸¿øÀÌ ¾Æ´Õ´Ï´Ù.");
 		}
 		
 		MyDetails pd = new MyDetails(dto);

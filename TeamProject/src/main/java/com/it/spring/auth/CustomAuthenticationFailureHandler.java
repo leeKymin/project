@@ -29,7 +29,7 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
 			errormsg = "아이디나 비밀번호가 맞지 않습니다. 다시 입력 하세요";
 		} else if (exception instanceof InternalAuthenticationServiceException) {
 			loginFailure(loginid);
-			errormsg = "�아이디나 비밀번호가 맞지 않습니다. 다시 입력 하세요";
+			errormsg = "아이디나 비밀번호가 맞지 않습니다. 다시 입력 하세요";
 		} else if (exception instanceof DisabledException) {
 			loginFailure(loginid);
 			errormsg = "계정이 비활성화 되었습니다. 관리자에게 문의하세요";
